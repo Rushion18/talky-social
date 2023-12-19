@@ -1,0 +1,111 @@
+### SIGNUP BUANA
+post http://localhost:8000/user/register
+Content-Type: application/json
+
+{
+    "username": "Bigboy Kitheka",
+    "email":"gamemy177@gmail.com",
+    "password": "@KithekaD564"
+}
+
+### LOGIN BUANA
+post http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "email":"gamemy177@gmail.com",
+    "password": "@KithekaD564"
+}
+
+
+### FOLLOW BUANA EIH
+post http://localhost:8000/user/follow
+Content-Type: application/json
+
+{
+  "user_id": "638724a4-a792-48a0-9272-47ed3de90fd0",
+  "follower_user_id": "89a248d3-3f1f-4a48-a70a-3290b350562f"
+}
+
+
+### GET THEM ALL BUANA
+GET http://localhost:8000/user/all
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJlNGNlMWFmZS1mOWFmLTQ5N2MtYjA4Ni00YmNjNDJhYTAxNTgiLCJlbWFpbCI6ImVtbWFudWVsQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiRW1tYW51ZWwgS2lwc2FuZyIsImlhdCI6MTcwMjQ5ODA2MywiZXhwIjoxNzAyNjcwODYzfQ.Qlg7aWptOKA2DcBj3ImL-p0yb1RmKDKOw_MWfjtFapo 
+
+
+### CREATE POST BUANA EIH
+post http://localhost:8000/post/create
+Content-Type: application/json
+
+{
+  "post_description": "Kitheka",
+  "post_image": "https://www.pinterest.com/pin/1150880879748603683/",
+  "user_id": "63779c09-1503-4124-833a-dd00a221f8ed"
+}
+
+
+### COMMENT BUANA COMMENT
+post http://localhost:8000/comment/add
+Content-Type: application/json
+
+{
+  "user_id": "63779c09-1503-4124-833a-dd00a221f8ed",
+  "post_id": "2f18ee72-c2d1-4d4a-bb5c-f98374970356",
+  "comment_text": "It is yet another Beautiful morning"
+}
+
+
+### UPDATE COMMENT BUANA
+PUT http://localhost:8000/comment/update/
+Content-Type: application/json
+
+{
+  "comment_id": "09a81327-f8b8-4843-90d3-39f09e81b284",
+  "comment_text": "Good boy"
+}
+
+
+### LIKE THE POST BUANA
+post http://localhost:8000/like/like
+Content-Type: application/json
+
+{
+  "user_id": "cd1d2542-b8d9-4cde-bdd7-f5132019435a",
+  "post_id": "6424d8a0-faa1-4cbd-b104-4faebad4a4e0"
+
+}
+
+
+
+### DELETE POST BUANA - HARAM!
+delete http://localhost:8000/post/6424d8a0-faa1-4cbd-b104-4faebad4a4e0
+Content-Type: application/json
+
+
+### GET ALL POSTS
+GET http://localhost:8000/post/all
+Content-Type: application/json
+
+
+### GET ONE POST
+GET http://localhost:8000/post/a6e3c6ca-4d78-4ed0-99a6-232f4841bf43
+Content-Type: application/json
+
+
+### GET FOLLOWERS BUANA
+GET http://localhost:8000/user/b052039b-757a-44ee-8139-4e07d795285f/followers
+Content-Type: application/json
+token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4OWEyNDhkMy0zZjFmLTRhNDgtYTcwYS0zMjkwYjM1MDU2MmYiLCJlbWFpbCI6ImFzYW1hbkBnbWFpbC5jb20iLCJ1c2VybmFtZSI6IlBlcmV6IEFubmFuIiwiaWF0IjoxNzAyNjM0MzA0LCJleHAiOjE3MDI4MDcxMDR9.6_ciRhcN53vq6DmlwR4G_YvNXW7LKqVeIdkyGpBA3pE"
+
+
+# ### GET All THEM COMMENTS ALL BUANA
+###
+GET http://localhost:8000/post/comment/a6e3c6ca-4d78-4ed0-99a6-232f4841bf43
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJlNGNlMWFmZS1mOWFmLTQ5N2MtYjA4Ni00YmNjNDJhYTAxNTgiLCJlbWFpbCI6ImVtbWFudWVsQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiRW1tYW51ZWwgS2lwc2FuZyIsImlhdCI6MTcwMjQ5ODA2MywiZXhwIjoxNzAyNjcwODYzfQ.Qlg7aWptOKA2DcBj3ImL-p0yb1RmKDKOw_MWfjtFapo 
+
+
+### GET ONE USER
+GET http://localhost:8000/user/7a6cc782-bb6b-4b68-9819-5b07087fffeb
+Content-Type: application/json
