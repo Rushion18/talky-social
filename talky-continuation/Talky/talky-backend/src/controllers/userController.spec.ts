@@ -64,9 +64,6 @@ describe("User registration", () => {
 
 
 
-
-
-
 describe("Testing Login Functionality", () => {
  
     let res: any

@@ -174,8 +174,6 @@ export const getFollowers = async (req: Request, res: Response) => {
   }
 };
 
-
-
 export const getOneUser = async (req: Request, res: Response) => {
 
 
@@ -201,4 +199,3 @@ export const getOneUser = async (req: Request, res: Response) => {
     
   }
 }
-
