@@ -4,11 +4,12 @@
       <input type="text" class="search" placeholder="Search" />
       <div class="nav-items">
         <img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" class="icons" alt="Home Icon" />
-        <img src="https://cdn-icons-png.flaticon.com/128/2983/2983788.png" class="icons" alt="Messenger Icon" />
+        <!-- <img src="https://cdn-icons-png.flaticon.com/128/2983/2983788.png" class="icons" alt="Messenger Icon" /> -->
         <img src="https://cdn-icons-png.flaticon.com/128/1237/1237946.png" class="icons" alt="Add Icon" />
         <img src="https://cdn-icons-png.flaticon.com/128/565/565504.png" class="icons" alt="Explore Icon" />
         <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" class="icons" alt="Like Icon" />
-        <img src="assets/Shon.png" class="icons user-account" alt="User Profile" />
+        <img  src="assets/Shon.png" class="icons user-account" alt="User Profile" />
+      
       </div>
     </div>
   </nav>
@@ -28,7 +29,7 @@
   <nav class="navbar-mobile-bottom">
     <div class="navbar-wrapper">
       <div class="nav-items">
-        <img src="https://cdn-icons-png.flaticon.com/128/69/69524.png" class="icons" alt="Home Icon" />
+        <img src="https://cdn-icons-png.flaticon.com/128/69/69524.png " class="icons" alt="Home Icon"/>  
         <img src="https://cdn-icons-png.flaticon.com/128/2983/2983788.png" class="icons" alt="Add Icon" />
         <img src="https://cdn-icons-png.flaticon.com/128/565/565504.png" class="icons" alt="Explore Icon" />
         <img src="https://cdn-icons-png.flaticon.com/128/3114/3114810.png" class="icons" alt="Like Icon" />
@@ -233,15 +234,16 @@
       <div class="right-col">
         <div class="profile-card">
           <div class="status-pic">
-            <img src="assets/Shon.png" />
+            <img routerLink="/profile" src="assets/Shon.png" />
           </div>
           <div>
             <p class="pro-user">@theyenvyshon</p>
-            <p class="sub-text">Agent Clappers</p>
+            <button (click)="goToProfilePage()" class="sub-text">Agent Clappers</button>
           </div>
           <div class="action-div">
-            <button class="action-btn">Switch</button>
+            <button class="action-btn">Profile</button>
           </div>
+          
         </div>
         <div class="profile-card">
           <div>
@@ -260,7 +262,9 @@
             <p class="sug-text">New to Instagram&nbsp;</p>
           </div>
           <div class="action-div">
-            <button class="action-btn">Follow</button>
+            <button class="action-btn" (click)="toggleFollow()">
+              {{ isFollowing ? 'Unfollow' : 'Follow' }}
+            </button>
           </div>
         </div>
 
@@ -273,7 +277,9 @@
             <p class="sug-text">New to Instagram&nbsp;</p>
           </div>
           <div class="action-div">
-            <button class="action-btn">Follow</button>
+            <button class="action-btn" (click)="toggleFollow1()">
+              {{ isFollowing1 ? 'Unfollow' : 'Follow' }}
+            </button>
           </div>
         </div>
 
@@ -286,7 +292,9 @@
             <p class="sug-text">Suggested for you</p>
           </div>
           <div class="action-div">
-            <button class="action-btn">Follow</button>
+            <button class="action-btn" (click)="toggleFollow2()">
+              {{ isFollowing2 ? 'Unfollow' : 'Follow' }}
+            </button>
           </div>
         </div>
         <div class="profile-card">

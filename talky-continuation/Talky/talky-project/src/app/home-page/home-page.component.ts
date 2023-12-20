@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -14,6 +15,10 @@ export class HomepageComponent {
 
   currentScroll = 0;
   scrollAmount = 120;
+  isFollowing = false;
+  isFollowing1 = false;
+  isFollowing2 = false;
+  router: any;
 
   scrollHorizontal(val: number): void {
     this.currentScroll += val * this.scrollAmount;
@@ -25,6 +30,26 @@ export class HomepageComponent {
 
     this.storiesContainer.nativeElement.scrollLeft = this.currentScroll;
   }
+
+  toggleFollow(): void {
+    this.isFollowing = !this.isFollowing;
+  }
+
+  toggleFollow1(): void {
+    this.isFollowing1 = !this.isFollowing1;
+  }
+
+
+  toggleFollow2(): void {
+    this.isFollowing2 = !this.isFollowing2;
+  }
+
+  goToProfilePage(): void {
+    // Navigate to the profile page
+    this.router.navigate(['/profile']); }
+
+  
+
 }
 
 

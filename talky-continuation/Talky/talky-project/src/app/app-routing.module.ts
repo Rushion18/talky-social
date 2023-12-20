@@ -15,7 +15,6 @@ const routes: Routes = [
   { path: 'login', component: LoginAuthenticationComponent },
   { path: 'profile', component: UserPageComponent },
   { path: 'home', component: HomepageComponent },
-  // { path: 'navbar', component: NavbarContentComponent }
 
 ];
 

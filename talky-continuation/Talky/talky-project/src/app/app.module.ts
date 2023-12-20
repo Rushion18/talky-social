@@ -30,6 +30,8 @@ import { SettingsContentComponent } from './settings-content/settings-content.co
 // import { StoriesComponent } from './stories/stories.component';
 import { HomepageComponent } from './home-page/home-page.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { HomePageComponent } from './home-page/home-page.component';
 // import { NavBarComponent } from './nav-bar/nav-bar.component';
 // import { StoriesComponent } from './stories/stories.component';
@@ -75,7 +77,10 @@ import { SideBarComponent } from './side-bar/side-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
