@@ -11,7 +11,7 @@ import { HomepageComponent } from './home-page/home-page.component';
 // import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: 'register', component: RegisterAuthenticationComponent },
+  { path: '', component: RegisterAuthenticationComponent },
   { path: 'login', component: LoginAuthenticationComponent },
   { path: 'profile', component: UserPageComponent },
   { path: 'home', component: HomepageComponent },
