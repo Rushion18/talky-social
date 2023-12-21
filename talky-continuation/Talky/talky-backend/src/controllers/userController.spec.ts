@@ -62,8 +62,6 @@ describe("User registration", () => {
  
 })
 
-
-
 describe("Testing Login Functionality", () => {
  
     let res: any
@@ -124,9 +122,9 @@ describe("Testing Login Functionality", () => {
     it("successfully logs in user and returns a token", async() => {
  
         let expectedUser = {
-            username: "Emmanuel Kipsang",
-            email: "emmqnuelkipsqng@gmail.com",
-            password: "@Emmanuel123"
+            username: "Emmanuel Matulai",
+            email: "matulai@gmail.com",
+            password: "@Matulai123"
         }
  
         const req = {
