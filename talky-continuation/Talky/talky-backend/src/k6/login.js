@@ -6,22 +6,6 @@ export const options = {
   duration: "10s",
 };
 
-// export default function () {
-//   const body = JSON.stringify({
-//     email: "9superbikes@gmail.com",
-//     password: "12345678",
-//   });
-//   const params = {
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//   };
-
-//   http.post("http://localhost:4500/user/login", body, params);
-//   sleep(1); //delay of one second
-// }
-
-//has assertions
 export default function () {
   const body = JSON.stringify({
     email: "whitney@gmail.com",
