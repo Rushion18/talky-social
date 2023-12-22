@@ -1,5 +1,7 @@
 # Talky Social Media Web App
 
+**Status: Under Active Development**
+
 Talky is a social media web app that combines the best features of Pinterest and Instagram, providing users with a platform to connect, share, and discover content.
 
 ## Table of Contents
@@ -10,6 +12,7 @@ Talky is a social media web app that combines the best features of Pinterest and
 - [Getting Started](#getting-started)
 - [Database Setup](#database-setup)
 - [Docker Integration](#docker-integration)
+- [Running Tests](#running-tests)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -103,11 +106,26 @@ Talky is containerized using Docker for easy deployment and scalability. Follow 
    docker run -p 80:80 -d talky-frontend
    ```
 
+## Running Tests
+
+The project includes the following testing frameworks:
+
+- **Jest:** [The unit tests accomplished work on the sign in and sign up options]
+- **Cypress:** [The end to end tests accomplished work on the sign in and sign up options]
+- **K6:** [The performance tests accomplished work on the sign in and sign up options]
+
+### Running Tests Locally
+
+1. [Instructions on how to run the tests]
+2. [More test-running instructions]
+3. [Any other relevant details]
+
 ## Contributing
 
-We welcome contributions! If you have ideas for improvements, feature requests, or found a bug, feel free to open an issue or submit a pull request.
+I welcome contributions! If you have ideas for improvements, feature requests, or found a bug, feel free to open an issue or submit a pull request.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
+
+---
